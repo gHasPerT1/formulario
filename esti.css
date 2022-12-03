@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.antesTodo{
+    
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background-image: url(https://fondosmil.com/fondo/3577.jpg);
+    animation: aparecer 2s;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes aparecer {
+    0%{
+        transform: scale(0.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+.todo{
+    margin-left: 15%;
+    position: absolute;
+    position: flex; 
+    height: 90px;
+    width: 70%;
+    background-color: rgb(21, 19, 19);
+    margin-top: 350px;
+    animation: encojer 2s;
+ 
+  
+    
+}
+
+
+@keyframes encojer {
+    0%{ 
+        margin: 0px;
+        margin-top: 350px;
+        width: 100%;
+    }
+
+    100%{
+        width: 70%;
+    }
+    
+}
+.navegar{
+    margin-top: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    
+   
+}
+.navegar ul{
+    position: relative;
+    
+}
+.navegar li{
+    display: inline;
+    /* position: relative; */
+  
+   
+
+}
+
+.navegar li a{
+    margin-left: 12%;
+    color: transparent;
+    font-size: 40px;
+    text-decoration: none;
+    
+    /* -webkit-text-stroke: 2px var(--nose); */
+    -webkit-text-stroke: 1px rgba(255, 255, 255, .5);
+    animation: tituloCaida 2s;
+    /* transition: .8s all; */
+    /* position: relative; */
+}
+.navegar li a::before{
+    content: attr(data);
+    /* color: rgb(223, 16, 188); */
+    position: absolute;
+    width: 0;
+   
+    border-right: 3px solid var(--nose);
+    animation-fill-mode: forwards;
+    transition: .8s all;
+    
+}
+
+
+.navegar li a:hover::before{
+    width: 11%;
+    color: var(--nose);
+    filter: drop-shadow(0 0 25px var(--nose));
+    -webkit-text-stroke: 1px var(--nose);
+    
+}
+
+
+
+@keyframes tituloCaida {
+    0%{
+        transform: translateY(-30px);
+        
+    }
+    100%{
+        
+        /* color: aqua; */
+    }
+    
+}
+
+
+
+
+
+.principal{ 
+    z-index: -1;
+    display: flex;
+    background-color: rgb(51, 172, 233);
+    position: absolute;
+    /* margin-top: 400px; */
+    margin-top: 1000px;
+    height: 100%;
+    width: 100%;
+    animation: main 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes main {
+
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-600px);
+        background-color: black;
+    }
+    
+}
+
+.correo{
+    color: white;
+    margin-top: 70px;
+}
+
+/*----------------------------------------------*/
+/* .c{
+    display: flex;
+    margin-top: 600px;
+} */
+/* 
+main{
+    margin-top: 500px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* .body{
+    overflow: hidden;
+} */
+/* h1{ 
+    text-align: center;
+    margin-top: 400px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.contenedor{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(137, 26, 26);
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.contenedor i{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: estrella linear infinite;
+
+}
+
+@keyframes estrella {
+    0%{
+        top: 10px;
+    }
+    100%{
+        top: 90vh;
+    }
+    
+} */

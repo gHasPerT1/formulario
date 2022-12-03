@@ -1,0 +1,581 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    background-color: rgb(12, 12, 12);
+} */
+.contenedor-formulario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+    width: 90%;
+    /* background-color: rgba(240, 248, 255, 0.722); */
+    text-align: center;   
+    justify-content: space-around;
+    transition: all 3s;
+    color: white;
+}
+
+
+.iconos{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    margin-left: 30px;
+}
+
+.border-icon:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+.formulario{
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    margin-left: 80px;
+    /* background-color: rgba(58, 156, 183, 0.874); */
+    background-image: url(./imann/foormulariofondo.jpg);
+    text-align: center;
+    border-radius: 3rem;
+}
+
+.formulario1{
+    position: absolute;
+    
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    width: 435px;
+    height: 808px;
+    /* padding: 0rem;
+    margin: 0rem; */
+    margin-top: -16px;
+    margin-left: -17px;
+    text-align: center;
+    border-radius: 3rem;
+    clip-path: polygon(0 0, 100% 0, 12% 20%, 95% 25%, 12% 39%, 100% 52%, 11% 66%, 100% 76%, 10% 85%, 100% 100%, 0 100%);
+    background-color: rgb(255, 0, 0);
+    z-index: -1;
+    
+  
+}
+.uno{
+    
+    /* clip-path: polygon(0 0, 100% 0, 12% 20%, 95% 25%, 12% 39%, 100% 52%, 11% 66%, 100% 76%, 10% 85%, 100% 100%, 0 100%);
+    background-color: red; */
+    
+    margin: 0px;
+    padding: 0px;
+}
+.dos{
+    clip-path: polygon(100% 0, 0 0, 100% 19%, 0 24%, 100% 44%, 0 53%, 100% 63%, 0 75%, 100% 85%, 0 100%, 100% 99%);
+    background-color: red;
+}
+
+.formulario h1{
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+.formulario input{
+    
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(226, 219, 219);
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+  
+   
+}
+
+.formulario button{
+    width: 50%;
+    margin: auto;
+    border: solid thin rgb(21, 19, 19);
+    padding: 15px;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: .8rem;
+    cursor: pointer;
+    color: black;
+}
+
+.mensaje h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: 'Lobster', cursive;
+    transition: all 2s;
+    
+}
+
+
+
+/*-----------------------------------------------------------------*/
+.crearcuenta{
+    
+    /* display: flex; */
+    width: 80%;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    margin-left: 250px;
+    /* background-color: rgb(195, 12, 12); */
+    
+}
+
+
+.crearcuenta1{
+    
+    /* display: flex; */
+    width: 80%;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    margin-left: 50px; 
+    /* background-color: rgb(195, 12, 12); */
+    
+}
+
+
+.mensaje{
+    padding: 1rem;
+    font-size: 20px;
+    color: black;
+}
+
+.mensaje1{
+    padding: 1rem;
+    font-size: 20px;
+    color: black;
+    margin-left: 0px;
+}
+
+.mensaje1 button:hover{
+    transform: scale(1.5);
+}
+.mensaje1 button{
+    padding: 1rem;
+    font-weight: 500;
+    background-color: black;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+.mensaje button:hover{
+    transform: scale(1.5);
+}
+
+.mensaje button{
+    padding: 1rem;
+    font-weight: 500;
+    background-color: black;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+.sing-up{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sing-up.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sing-in.active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nuevoform{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+/* .personaje{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(577px/5);
+    height: 105px;
+    background-image: url(./imann/aweb.png);
+    animation: animar 1s steps(5);
+}
+
+@keyframes animar {
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 577px;
+    }
+    
+}  */
+/*adornosssssssssssssssssssssssssssssssss*/
+.cuadros{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: 33% 33% 33%;
+    height: 300px;
+    width: 100%;
+    /* background-color: black; */
+}
+
+
+.cuadros2{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: 33% 33% 33%;
+    height: 300px;
+    width: 100%;
+    /* background-color: black; */
+}
+
+
+.cuadros3{
+    display: grid;
+    margin-top: 60px;
+    margin-left: 0px;
+    grid-template-columns: 33% 33% 33%;
+    height: 300px;
+    width: 100%;
+    /* background-color: black; */
+}
+
+.cuadros4{
+    display: grid;
+    margin-top: 60px;
+    margin-left: 0px;
+    grid-template-columns: 33% 33% 33%;
+    height: 300px;
+    width: 100%;
+    /* background-color: black; */
+}
+
+
+.a{ 
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(43, 58, 219);
+    animation: a 2s infinite alternate;
+    border-radius: 5px;
+
+}
+
+@keyframes a{
+    0%{
+        transform: scale(0.1);
+    }
+    70%{
+        transform: scale(1);
+        
+    }
+
+    100%{
+
+        /* background-color: rgb(211, 16, 182); */
+
+    }
+
+}
+
+
+.b{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(211, 16, 182);
+    animation: b 2s infinite;
+    animation-delay: 1s;
+    border-radius: 5px;
+}
+
+@keyframes b{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+        /* background-color: rgb(43, 58, 219); */
+        
+    }
+
+}
+
+
+.c{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(43, 58, 219);
+    animation: c 2s infinite;
+    animation-delay: 2s;
+    border-radius: 5px;
+}
+
+@keyframes c{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+
+
+.d{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(211, 16, 182);
+    animation: d 2.5s infinite alternate;
+    border-radius: 5px;
+}
+
+@keyframes d{
+    0%{
+        transform: scale(0.1);
+    }
+    /* 70%{
+        transform: scale(1);
+    } */
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+.e{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(43, 58, 219);
+    animation: e 1.5s infinite alternate;
+    border-radius: 5px;
+}
+@keyframes e{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+.f{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(211, 16, 182);
+    animation: f 1s infinite alternate;
+    border-radius: 5px;
+}
+
+
+@keyframes f{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+.g{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(43, 58, 219);
+    animation: g 1s infinite alternate;
+    border-radius: 5px;
+}
+
+@keyframes g{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+.h{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(211, 16, 182);
+    animation: h 2s infinite alternate;
+    border-radius: 5px;
+}
+
+@keyframes h{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+.i{
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    background-color: rgb(43, 58, 219);
+    animation: i 3s infinite alternate;
+    border-radius: 5px;
+}
+
+@keyframes i{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+
+
+
+
+#contenedorjuego1{
+    margin-top: 20px;
+    margin-left: -150px;
+
+}
+
+.juego{
+    position: relative;
+    margin-top: 0px;
+    height: 100vh;
+    background-image: url(./imann/fondodiv.PNG)
+  
+
+}
+
+.juego::before{
+    content: ' ';
+    margin-left: 262px;
+    position: absolute;
+    height: 100%;
+    width: 170px;
+    background: url(./imann/wave\ horisontal2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.juego h1{
+    color: rgb(255, 248, 57);
+    
+    margin-left: -200px;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.oferta{
+    margin-top: 10px;
+    margin-left: -100px;
+    font-size: 30px;
+    
+}
+
+.aver{
+    
+    position: relative;
+    width: 87.5%;
+    margin-top: 0px;
+    height: 100vh;
+    background-image: url(./imann/fondodiv.PNG);
+    margin-left: 300px;
+    
+}
+.aver::before{
+    content: ' ';
+    margin-left: -378px;
+    position: absolute;
+    height: 100%;
+    width: 170px;
+    background: url(./imann/wave\ horisontal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#error{
+    margin-top: 50px;
+    font-size: 22px;
+    color: red;
+    display: none;
+}
+
+#bien{
+    margin-top: 50px;
+    font-size: 22px;
+    display: none;
+    color: white;
+}
+
+#error1{
+    margin-top: 50px;
+    font-size: 22px;
+    color: red;
+    display: none;
+}
